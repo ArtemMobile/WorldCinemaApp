@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@color/dark_background"
     android:layout_height="match_parent"
-    tools:context=".activity.LoginActivity">
+    tools:context=".activity.RegisterActivity">
 
     <ImageView
         android:id="@+id/imageFilterView"
@@ -18,13 +18,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="64dp"
         android:background="@drawable/editor_shape"
-        android:hint="@string/e_mail"
+        android:hint="Имя"
         android:paddingStart="16dp"
         android:paddingTop="13dp"
         android:layout_marginEnd="16dp"
@@ -34,6 +34,42 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageFilterView" />
+
+    <EditText
+        android:id="@+id/etSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/editor_shape"
+        android:hint="Фамилия"
+        android:paddingStart="16dp"
+        android:paddingTop="13dp"
+        android:layout_marginEnd="16dp"
+        android:paddingBottom="13dp"
+        android:textColorHint="@color/text_color"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/editor_shape"
+        android:hint="@string/e_mail"
+        android:paddingStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:textColorHint="@color/text_color"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSurname" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -53,23 +89,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnLogIn"
+    <EditText
+        android:id="@+id/etConfirmPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="106dp"
-        android:textColor="@color/white"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/editor_shape"
+        android:hint="Повторите пароль"
+        android:paddingStart="16dp"
         android:layout_marginEnd="16dp"
-        android:textAllCaps="false"
-        android:background="@drawable/button_shape"
-        android:text="Войти"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:textColorHint="@color/text_color"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnSignUp"
+        android:id="@+id/btnSingUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textAllCaps="false"
+        android:background="@drawable/button_shape"
+        android:text="Зарегестрироваться"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etConfirmPassword" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -78,9 +132,9 @@
         android:layout_marginEnd="16dp"
         android:textAllCaps="false"
         android:background="@drawable/editor_shape"
-        android:text="Регистрация"
+        android:text="У меня уже есть аккаунт"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogIn" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSingUp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

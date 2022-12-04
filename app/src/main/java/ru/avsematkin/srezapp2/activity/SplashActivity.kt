@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import ru.avsematkin.srezapp2.R
 import ru.avsematkin.srezapp2.databinding.ActivitySplashBinding
+import ru.avsematkin.srezapp2.preferences.PrefsManager
 
 class SplashActivity : AppCompatActivity() {
 
@@ -16,7 +17,17 @@ class SplashActivity : AppCompatActivity() {
 
         binding.ivLogo.alpha = 0F
         binding.ivLogo.animate().setDuration(2000).alpha(1F).withEndAction{
-            startActivity(Intent(this,LoginActivity::class.java))
+            if(!PrefsManager(this).logged()){
+                startActivity(Intent(this,LoginActivity::class.java))
+                finish()
+
+            }
+            else{
+                //PrefsManager(this).unLog()
+                startActivity(Intent(this, MainActivity::class.java))
+                finish()
+            }
+
         }
     }
 }
