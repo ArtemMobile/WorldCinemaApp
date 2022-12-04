@@ -7,11 +7,15 @@
         <entry key="..\:/Users/artem/AndroidStudioProjects/SrezApp2/app/src/main/res/drawable/editor_shape.xml" value="0.173" />
         <entry key="..\:/Users/artem/AndroidStudioProjects/SrezApp2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.173" />
         <entry key="..\:/Users/artem/AndroidStudioProjects/SrezApp2/app/src/main/res/drawable/ic_logo.xml" value="0.173" />
+        <entry key="..\:/Users/artem/AndroidStudioProjects/SrezApp2/app/src/main/res/layout/activity_film.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/artem/AndroidStudioProjects/SrezApp2/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/artem/AndroidStudioProjects/SrezApp2/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/artem/AndroidStudioProjects/SrezApp2/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/artem/AndroidStudioProjects/SrezApp2/app/src/main/res/layout/activity_splash.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/artem/AndroidStudioProjects/SrezApp2/app/src/main/res/layout/fragment_collections.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/artem/AndroidStudioProjects/SrezApp2/app/src/main/res/layout/fragment_main.xml" value="0.2" />
+        <entry key="..\:/Users/artem/AndroidStudioProjects/SrezApp2/app/src/main/res/layout/fragment_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/artem/AndroidStudioProjects/SrezApp2/app/src/main/res/layout/fragment_range.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/artem/AndroidStudioProjects/SrezApp2/app/src/main/res/layout/new_item.xml" value="0.253125" />
         <entry key="..\:/Users/artem/AndroidStudioProjects/SrezApp2/app/src/main/res/layout/trend_item.xml" value="0.253125" />
         <entry key="..\:/Users/artem/AndroidStudioProjects/SrezApp2/app/src/main/res/menu/menu.xml" value="0.4" />

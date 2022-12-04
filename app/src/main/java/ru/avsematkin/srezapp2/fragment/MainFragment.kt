@@ -52,8 +52,8 @@ class MainFragment : Fragment() {
 
         Common.service.getNews().enqueue(object: Callback<Films>{
             override fun onResponse(call: Call<Films>, response: Response<Films>) {
-                binding.rvTrends.adapter = NewsAdapter(requireActivity(), response.body()!!)
-                binding.rvTrends.layoutManager = LinearLayoutManager(requireActivity(), LinearLayoutManager.HORIZONTAL, false)
+                binding.rvNew.adapter = NewsAdapter(requireActivity(), response.body()!!)
+                binding.rvNew.layoutManager = LinearLayoutManager(requireActivity(), LinearLayoutManager.HORIZONTAL, false)
             }
 
             override fun onFailure(call: Call<Films>, t: Throwable) {

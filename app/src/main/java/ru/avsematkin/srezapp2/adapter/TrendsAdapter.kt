@@ -1,18 +1,23 @@
 package ru.avsematkin.srezapp2.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.cardview.widget.CardView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import ru.avsematkin.srezapp2.R
+import ru.avsematkin.srezapp2.activity.FilmActivity
 import ru.avsematkin.srezapp2.model.Film
 
 class TrendsAdapter(val context: Context, val list: ArrayList<Film>): RecyclerView.Adapter<TrendsAdapter.TrendHolder>() {
     class TrendHolder(view: View): RecyclerView.ViewHolder(view) {
         val photo: ImageView = view.findViewById(R.id.ivCoverTrend)
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TrendHolder {
@@ -24,6 +29,11 @@ class TrendsAdapter(val context: Context, val list: ArrayList<Film>): RecyclerVi
         Glide.with(context)
             .load(item.image)
             .into(holder.photo)
+        holder.photo.setOnClickListener{
+            context.startActivity(
+                Intent(context, FilmActivity::class.java).putExtra("description", item.description)
+                .putExtra("image", item.image))
+        }
     }
 
     override fun getItemCount(): Int = list.size

@@ -22,12 +22,13 @@ class RegisterActivity : AppCompatActivity() {
             else{
                 Toast.makeText(this,
                     "Поля не должны быть пустыми, электронная почта должна быть правильной, пароли должны совпадать",
-                    Toast.LENGTH_SHORT).show()
+                    Toast.LENGTH_LONG).show()
             }
         }
 
         binding.btnSignIn.setOnClickListener{
             startActivity(Intent(this, LoginActivity::class.java))
+            finish()
         }
     }
     private fun dataIsValid(): Boolean{
