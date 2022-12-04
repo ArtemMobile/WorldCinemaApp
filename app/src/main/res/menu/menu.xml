@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Main"
+        android:icon="@drawable/main"
+        android:title="Главное"/>
+    <item android:id="@+id/Range"
+        android:icon="@drawable/range"
+        android:title="Подборка"/>
+    <item android:id="@+id/Collections"
+        android:icon="@drawable/collections"
+        android:title="Коллекции"/>
+    <item android:id="@+id/Profile"
+        android:icon="@drawable/profile"
+        android:title="Профиль"/>
+</menu>
